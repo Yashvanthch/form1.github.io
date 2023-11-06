@@ -1,0 +1,269 @@
+*{
+    margin: 0%;
+    padding:0%;
+    font-family: 'poppins','san-serif';
+    box-sizing: border-box;
+
+
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: black;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+
+.logo{
+    font-size: 2em;
+    color:azure;
+    user-select: none;
+}
+
+
+
+.logo::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: -66px;
+    width: 100%;
+    height: 33px;
+    background: blue;
+    border-radius: 55px;
+    transform: scaleX(0);
+    transition:transform .3s;
+    transform-origin: right;
+}
+
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: azure;
+    margin-left: 40px;
+    text-decoration: none;
+
+}
+
+
+
+
+.btnlogin-popup{
+    color: azure;
+    font-size: 1.1em;
+    font-weight: 500;
+    width: 150px;
+    height: 50px;
+    outline: none;
+    border-radius: 6px;
+    margin-left: 53px;
+    background: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+
+.btnlogin-popup:hover{
+    
+    background-color: azure;
+    color: black;
+}
+
+
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: -6px;
+    width: 70%;
+    height: 3px;
+    background: blue;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition:transform .3s;
+    transform-origin: right;
+}
+
+
+.navigation a:hover::after{
+    transform: scaleX(2);
+    transform-origin: left;
+}
+
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url('numo.jpg');
+    background-position-x: center;
+    
+
+}
+
+
+
+.form{
+
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.form-box-login h2{
+    text-align: center;
+    font-size: 2em;
+    color:solid white;
+}
+
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+}
+
+
+.input-box label{
+    position:absolute ;
+    top: 50%;
+    left: 5px;
+    transform:translateY(-50x) ;
+    font-size:1em ;
+    color:white;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+
+}
+
+
+
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+
+
+
+
+
+
+
+
+.input-box input{
+    width:100% ;
+    height:100% ;
+    background:transparent ;
+    border:none ;
+    outline: none;
+    font-size: 1em;
+    color: azure;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color:white;
+    line-height: 57px;
+    
+}
+
+
+
+.input-box .icon:hover{
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+        content: '';
+        position: absolute;
+        transform: scaleX(0);
+        transition:transform .3s;
+    
+
+    
+}
+
+
+.button:hover{
+    background-color: black;
+        content: '';
+        position: absolute;
+        transform: scaleX(0);
+        
+}
+
+
+
+.forget{
+    font-size: .85em;
+    color: azure;
+    font-weight: 500;
+    display: flex;
+    margin-bottom: 10%;
+    text-align: center;
+    
+    padding: 10px 0;
+
+}
+
+.password{
+    padding-left: 50px;
+}
+
+.forget a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.btn{
+    width: 100%;
+    background: #162938;
+    color: azure;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 5%;
+    float: right;
+
+}
+
+
+
+
+
